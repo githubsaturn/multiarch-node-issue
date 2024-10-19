@@ -1,0 +1,15 @@
+name: Test Node 18
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Node 18 test
+        shell: bash
+        run: ./build_project.sh Dockerfile.node18

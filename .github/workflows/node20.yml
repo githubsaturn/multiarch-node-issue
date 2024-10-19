@@ -1,0 +1,15 @@
+name: Test Node 20
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Node 20 test
+        shell: bash
+        run: ./build_project.sh Dockerfile.node20

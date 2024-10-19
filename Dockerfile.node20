@@ -1,0 +1,6 @@
+FROM node:20-alpine
+
+RUN echo "Node 20"
+RUN node -v
+RUN npm -v
+RUN echo "Finished Node 20"
