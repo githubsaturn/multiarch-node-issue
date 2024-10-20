@@ -2,8 +2,6 @@
 
 See https://github.com/nodejs/docker-node/issues/2155
 
-TLDR:
-
 Creating a **multiarch image** (using buildx) works fine if we're using Node 18, and it breaks when we switch to Node 20.
 
 Works:
