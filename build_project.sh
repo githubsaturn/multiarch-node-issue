@@ -15,5 +15,5 @@ docker buildx rm mybuilder || echo "mybuilder not found"
 docker buildx create --name mybuilder
 docker buildx use mybuilder
 
-docker buildx build --platform linux/arm -t my-test-image -f $DOCKERFILE --load .
+docker buildx build --platform linux/arm -t my-test-image -f $DOCKERFILE .
 # docker buildx build --platform linux/amd64,linux/arm64,linux/arm -t my-test-image -f $DOCKERFILE -- .
